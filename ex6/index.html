@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <button class="proximo"> Próximo</button>
+    <script>
+        let atual = document.querySelector('li')
+        let proximo = document.querySelector('.proximo')
+        atual.style.backgroundColor = 'pink'
+        proximo.addEventListener('click', () => {
+            atual.style.backgroundColor = 'white'
+            atual = atual.nextElementSibling
+            if(atual == null) {
+                atual.document.querySelector('li')
+            }
+            atual.style.backgroundColor = 'pink'
+        })
+    </script>
+</body>
+
+</html>

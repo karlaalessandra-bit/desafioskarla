@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="filha1"></div>
+    <div class="filha2"></div>
+
+
+    <script>
+        let filha01 = document.querySelector('.filha1')
+        console.log(filha01.childNodes.length) //1
+        console.log(filha01.children.length)//0
+    </script>
+
+    <!-- o childNodes retorna todos os nós incluindo textos e espaços em branco -->
+    <!-- o chiodren retorna somente de houver elementos /tags -->
+</body>
+
+</html>
